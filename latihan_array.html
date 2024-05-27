@@ -1,0 +1,52 @@
+
+    <script>
+
+        // latihan
+        var murid=[
+            [1,'Vincent',3.5],
+            [2,'Udin',3.01],
+            [3,'Mamang',2.1],
+            [4,'Aji',3.8],
+            [5,'Gagan',3.9],
+            [6,'Ami',3.7],
+            [7,'Doni',3.6]
+        ]
+    
+        var vincent_no=murid[0][0]+'. '
+        var vincent_nama=murid[0][1]+', '
+        var vincent_ipk='IPK = '+murid[0][2]+', '
+        var vincent_status=(murid[0][2]>=3.0)?' Lulus':'Gagal'
+    
+        var udin_no=murid[1][0]+'. '
+        var udin_nama=murid[1][1]+', '
+        var udin_ipk='IPK = '+murid[1][2]+', '
+        var udin_status=(murid[1][2]>=3.0)?' Lulus':'Gagal'
+           
+        var mamang_no=murid[2][0]+'. '
+        var mamang_nama=murid[2][1]+', '
+        var mamang_ipk='IPK = '+murid[2][2]+', '
+        var mamang_status=(murid[2][2]>=3.0)?' Lulus':'Gagal'
+        
+        
+        // nulis variable baru
+        // output secara manual
+        // document.write(vincent_no+vincent_nama+vincent_ipk+vincent_status+'<br>')
+        // document.write(udin_no+udin_nama+udin_ipk+udin_status+'<br>')
+        // document.write(mamang_no+mamang_nama+mamang_ipk+mamang_status)
+
+        // looping, output otomatis
+        for(let i=0;i<murid.length;i++){
+            var no=murid[i][0]+'. '
+            var nama=murid[i][1]+', '
+            var ipk='IPK = '+murid[i][2]+' '
+            var status=murid[i][2]>=3.0? 'Lulus':'Gagal'
+       
+        document.write(no+nama+ipk+status+'<br>')
+    }
+    </script>
+    
+
+
+
+
+
