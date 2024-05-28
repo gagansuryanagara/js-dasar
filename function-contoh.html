@@ -1,0 +1,51 @@
+<script>
+    function cetak_slip_gaji(staff,periode,gajian,upahLembur,totalGajian) {
+        
+        // sysntax concat modern
+        document.write(
+            `Slip Gaji Periode ${periode}
+            <hr>
+            Staff:${staff}<br>
+            Gaji:Rp${gajian.toLocaleString('id-ID')}<br>
+            Lembur:Rp${upahLembur.toLocaleString('id-ID')}<br>
+            Total:Rp${totalGajian.toLocaleString('id-ID')}<br><br><br>`
+            )
+    }
+
+
+    function proses_perhitungan_gaji(staff,periode,hariKerja,gajiPerHari,jamLembur=0) {
+        var gajian=gajiPerHari*hariKerja
+        var upahLembur=(gajiPerHari/8)*jamLembur
+        var bpjs=gajian*0.025
+        var totalGajian=gajian-bpjs+upahLembur
+        cetak_slip_gaji(staff,periode,gajian,upahLembur,totalGajian)
+        // var bpjs=0.02*gajian
+        
+        // syntax concat traditional
+        // document.write( 
+        //     'Slip gaji periode ' +periode +
+        //     '<hr>' +
+        //     'Staff: ' +staff + '<br>' +
+        //     'Gaji : Rp.' +gajian.toLocaleString('id-ID') + '<br>' +
+        //     '<u>Lembur : Rp.' +upahLembur.toLocaleString('id-ID') + '</u><br>' +
+        //     'Potongan BPJS : Rp.' +bpjs.toLocaleString('id-ID') + '<br>' +
+        //     'Total : Rp.' +totalGajian.toLocaleString('id-ID') + '<br><br>' 
+        // )
+        
+        // syntax concat modern
+        // document.write(
+        //     `Slip Gaji Periode ${periode}
+        //     <hr>
+        //     Staff:${staff}<br>
+        //     Gaji:Rp${gajian.toLocaleString('id-ID')}<br>
+        //     Lembur:Rp${upahLembur.toLocaleString('id-ID')}<br>
+        //     Total:Rp${totalGajian.toLocaleString('id-ID')}<br><br><br>`
+        //     )
+    
+        // modifikasi potongan BPJS 2.5% dari gajian tanpa lembur
+        
+    proses_perhitungan_gaji('Ami','Mei 2024',20,150000,5)
+    proses_perhitungan_gaji('Doni','Mei 2024',22,150000)
+    proses_perhitungan_gaji('Elang','Mei 2024',22,185000)
+
+</script>

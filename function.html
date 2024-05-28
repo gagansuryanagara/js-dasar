@@ -1,0 +1,69 @@
+<script>
+
+// membuat function     
+function ucap_salam() {
+       console.log('Halo, nama saya Gagan') 
+}
+
+// menggunakan atau memanggil function
+ucap_salam()
+
+// function dengan parameter (1)_alamat fix
+function halo(nama_orang,alamat) { // params : variable khusus untuk memanggil function dinamis
+    console.log('Halo, nama saya '+nama_orang +', saya tinggal di '+alamat) 
+}
+
+halo('Dony', 'jakarta')
+halo('Dony', 'Bandung')
+halo('Dony', 'Bekasi')
+
+
+// function dengan parameter (2)_alamat opsional
+function halo(nama_orang,alamat='Indonesia') { // params : variable khusus untuk memanggil function dinamis
+    console.log('Halo, nama saya '+nama_orang +', saya tinggal di '+alamat) 
+}
+
+halo('Dony', 'Bali')
+halo('Dony', 'Bandung')
+halo('Dony', 'Bekasi')
+
+// function dengan parameter (3)_alamat opsional
+function halo(nama_orang,alamat='') { // params : variable khusus untuk memanggil function dinamis
+    if (alamat) {
+        console.log('Halo, nama saya '+nama_orang, 'saya tinggal di' +alamat)
+    } else{
+        console.log('Halo, nama saya '+nama_orang)
+    } 
+}
+
+halo('Dony',)
+halo('Dony', 'Bandung')
+
+// function dengan parameter (4)_alamat opsional
+function halo(nama_orang,alamat='',pekerjaan) { // params : variable khusus untuk memanggil function dinamis
+    if (alamat) {
+        console.log('Halo, nama saya '+nama_orang +', profesi saya '+pekerjaan +' saya tinggal di ' +alamat)
+    } else{
+        console.log('Halo, nama saya '+nama_orang +', profesi saya '+pekerjaan)
+    } 
+}
+
+halo('Gagan')
+halo('Elang','','Programmer')
+halo('Diestra',null,'Programmer')
+halo('Dony','Bekasi','Developer')
+
+
+// latihan
+function checkAngka(number) {
+    if(number%2===0){
+        console.log('Genap')
+    } else{
+        console.log('Ganjil')
+    }
+}
+
+checkAngka(5)
+
+
+</script>
