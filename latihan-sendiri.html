@@ -1,0 +1,168 @@
+<script>
+
+// 01. variable
+
+    // var karyawan = 'Gagan' // string
+    // var jenis_kelamin = 'l' // karakter
+    // var nomor = 13 // integer
+    // var angka = 2.9 // float
+    // var boolen = true
+    // var kosong = null
+
+    // console.log(karyawan)
+    // console.log(nomor/angka+'juta')
+    // console.log((50+10)/2)
+
+    // var nilai_doni = 7
+    // var nilai_ganes = 8
+    // console.log(nilai_doni+nilai_ganes)
+
+    // var cek_nilai=(nilai_doni===nilai_ganes)
+    // console.log(cek_nilai)
+
+    // // perbandingan eksis
+    // var dan=(nilai_doni && nilai_ganes)
+    // var dan=(nilai_doni || nilai_ganes)
+    // var bukan=(nilai_doni)
+    // console.log(bukan)
+
+// 02. Pengkondisian-ifelse
+
+    // var angka=3
+
+    // // if else sederhana
+    // if (angka!=2) {
+    //     console.log('Benar')
+    // } else {
+    //     console.log('Bukan')
+    // }
+
+    // multi if else
+    // var umr = 500000
+    // var gaji = 500000
+
+    // if (gaji>umr) {
+    //     console.log('Gaji kamu diatas UMR')
+    // } else if (gaji<umr) {
+    //     console.log('Gaji kamu dibawah UMR')
+    // } else if (gaji=umr){
+    //     console.log('Gaji kamu sudah sesuai dengan UMR')
+    // } else {
+    //     console.log('Data tidk diketahui')
+    // }
+
+    // // latihan 1
+
+    // var umur=17
+
+    // if (umur>=17) {
+    //     console.log('Bisa bikin KTP')        
+    // } else {
+    //     console.log('Belum bisa bikin KTP')
+    // }
+
+    // // latihan 2
+
+    // var usia=15
+    // var tinggi=180
+
+    // if (usia<17) {
+    //     if (tinggi>=150) {
+    //         console.log('Tinggi Mencukupi')
+    //     } else {
+    //         console.log('Anda dilarang masuk, tinggi tidak cukup')
+    //     }
+    // } else {
+    //     console.log('Boleh masuk')
+        
+    // }
+
+    // latihan 3
+
+    // var minuman='teh'
+
+    // switch (minuman) {
+    //     case 'kopi':
+    //         console.log('kamu pilih kopi')
+    //         break;
+    //     case 'teh':
+    //         console.log('kamu pilih teh')
+    //         break;
+    //     case 'sekoteng':
+    //         console.log('kamu pilih sekoteng')
+    //         break;
+    //     default:
+    //         console.log('kamu tidak minum')
+    //         break;
+    // }
+
+// 03. Perulangan
+
+    // for
+    // for (let urutan=0;urutan<10;urutan++) {
+    //     console.log(urutan) 
+    // }
+
+    
+    // while
+    // var i=0
+    // while (i<=5) {
+    //     console.log('while '+i)
+    //     i++
+    // }
+
+    // // looping bersarang
+    // for (let i=1;i<=5;i++){
+    //     console.log('Gagan '+i)      
+    //     for (let j=1;j<=3;j++){
+    //         console.log('   motor ' +j)
+    //         for (let k=0;k<2;k++) {
+    //             console.log('       spek ' +k)
+    //         }
+    //     }
+    //     } 
+    
+    // segitiga
+//         const numRows = 5;
+
+//         for (let i = 1; i <= numRows; i++) {
+//             let row = '';
+//             for (let j = 1; j <= i; j++) {
+//                 row += j;
+//         }
+//         console.log(row);
+// }
+
+// 04. Array
+
+    // Array 1-D
+
+    // var barang1='laptop'
+    // var barang1='mouse'
+    // var barang1='handphone'
+
+    // var barang=['laptop','mouse','handphone',200]
+    // barang.push('headset')
+    // barang.pop()
+
+    // console.log(barang)
+    // console.log(barang.length)
+
+    // Array-2D
+    var motor=[
+        ['Nmax','Aerox','Mio'],
+        ['PCX','Vario','Beat'],
+        ['GSX','Nex','Smash']
+    ]
+
+    var motor1=[
+        ['Nmax','Aerox',['Mio','Mio Gear']],
+        ['PCX','Vario',['Beat Street','Beat Deluxe']],
+        ['GSX','Nex','Smash']
+    ]
+
+    console.log(motor[2][0])
+    console.log(motor1[1][2][0])
+
+
+</script>
