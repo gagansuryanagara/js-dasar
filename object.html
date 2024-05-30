@@ -1,0 +1,113 @@
+<script>
+
+// object
+
+    // var mahasiswa={ 
+    //     // key:value
+    //     nama:'Aji Kowiyu',
+    //     ipk:3.21,
+    //     statusLulus:true
+    // }
+
+    // console.log(mahasiswa.ipk)
+    // console.log(mahasiswa['ipk'])
+
+
+// method
+
+    // var mahasiswa={ 
+    //      nama:'Aji Kowiyu',
+    //      ipk:2.21,
+    //      statusLulus:function() { // function anonynmous
+    //         if (this.ipk>=3) {
+    //             // Tujuan akhir adalah untuk mencetak ke view/html
+    //             // console.log('Lulus')
+
+    //             // tujuan akhirnya untuk menghasilkan data
+    //             // yang akan digunakan oleh object/logic yg lain
+    //             return'Lulus'
+    //         } else {
+    //             // console.log('Gagal')
+    //             return'Gagal'
+    //         }
+    //      },
+
+    //      cetakRapor:function(){
+    //             console.log(
+    //             `
+    //             Rapor ${this.nama}
+    //             ==================
+    //             Indeks Prestasi Kumulatif :${this.ipk}
+    //             Status Kelulusan :${this.statusLulus()}
+    //             `
+    //         )
+        
+    //      }
+
+    // }
+
+    // // mahasiswa.statusLulus()
+    //    mahasiswa.cetakRapor()
+    // // console.log(mahasiswa.ipk)
+    // // console.log(mahasiswa['ipk'])
+
+    // latihan
+
+    // console.log('Hobby caca : ') 
+
+//     var caca={ 
+//         nama:'caca',
+//         berat:45,
+//         tinggi:155,
+//         hobi:['Nonton','Makan'],
+
+//         sebutkanHobby:function(){
+//             console.log('Hobby caca : ')            
+//             for(let i=0;i<this.hobi.length;i++){
+//                 console.log((i+1)+'. '+this.hobi[i])
+//             }
+//         }
+//     }
+
+// caca.sebutkanHobby()
+
+// cara lain
+
+    // var aji={
+    //     nama: 'Aji',
+    //     berat: 90,
+    //     tinggi: 155,
+    //     hobi: ['makan','nonton','shopping','rebahan'],
+    //     sebutkanHobby:function(){
+    //         var semuaHobi=''
+
+
+
+    //         for (let i = 0; i < this.hobi.length; i++) {
+    //             semuaHobi = semuaHobi+(i+1)+'. '+this.hobi[i]
+    //         }
+    //         console.log(
+    //             'Hobby ${this.nama}:\n' +
+    //             semuaHobi
+    //         )
+    //     }
+    // }
+
+// Penambahan ke diri sendiri (rekursif)
+
+    var presiden = 'soekarno'
+    presiden = presiden + ' soeharto'
+    presiden = presiden + ' habibie'
+    console.log(presiden)
+
+
+    var peserta = 'Gagan'
+    peserta += ' Dony'
+    peserta += ' Elang'
+    peserta += ' Ami'
+    console.log(peserta)
+
+
+
+
+</script>

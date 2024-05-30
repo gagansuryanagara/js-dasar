@@ -1,7 +1,7 @@
 <script>
 
 // 01. variable
-
+// ======================================
     // var karyawan = 'Gagan' // string
     // var jenis_kelamin = 'l' // karakter
     // var nomor = 13 // integer
@@ -27,7 +27,7 @@
     // console.log(bukan)
 
 // 02. Pengkondisian-ifelse
-
+// ======================================
     // var angka=3
 
     // // if else sederhana
@@ -97,7 +97,7 @@
     // }
 
 // 03. Perulangan
-
+// ======================================
     // for
     // for (let urutan=0;urutan<10;urutan++) {
     //     console.log(urutan) 
@@ -134,6 +134,7 @@
 // }
 
 // 04. Array
+// =======================================
 
     // Array 1-D
 
@@ -149,20 +150,161 @@
     // console.log(barang.length)
 
     // Array-2D
-    var motor=[
-        ['Nmax','Aerox','Mio'],
-        ['PCX','Vario','Beat'],
-        ['GSX','Nex','Smash']
-    ]
+    // var motor=[
+    //     ['Nmax','Aerox','Mio'],
+    //     ['PCX','Vario','Beat'],
+    //     ['GSX','Nex','Smash']
+    // ]
 
-    var motor1=[
-        ['Nmax','Aerox',['Mio','Mio Gear']],
-        ['PCX','Vario',['Beat Street','Beat Deluxe']],
-        ['GSX','Nex','Smash']
-    ]
+    // var motor1=[
+    //     ['Nmax','Aerox',['Mio','Mio Gear']],
+    //     ['PCX','Vario',['Beat Street','Beat Deluxe']],
+    //     ['GSX','Nex','Smash']
+    // ]
 
-    console.log(motor[2][0])
-    console.log(motor1[1][2][0])
+    // console.log(motor[2][0])
+    // console.log(motor1[1][2][0])
 
+//     // latihan
+//     var murid=[
+//         [1,'Vincent',3.5],
+//         [2,'Udin',3.01],
+//         [3,'Mamang',2,1],
+//         [4,'Aji',3.8],
+//         [5,'Gagan',3.9],
+//         [6,'Ami',3.7],
+//         [7,'Doni',3.6]
+//     ]
+
+//     for(let i=0; i<murid.length;i++) {
+//         var no=murid[i][0]+'. '
+//         var nama=murid[i][1]+', '
+//         var ipk='IPK = '+murid[i][2]+' '
+//         var status=murid[i][2]>=3.0?'Lulus':'Tidak Lulus'
+
+//     document.write(no+nama+ipk+status+'<br>')
+//     }
+
+
+// 05. Function
+// ======================================
+
+// membuat function
+// function ucap_salam() {
+//     console.log('Halo, nama saya nanda')
+// }
+
+// ucap_salam()
+
+// function dengan parameter (1)_alamat fix
+// function halo(nama_orang,alamat) {
+//     console.log('Halo, nama saya '+nama_orang +', saya tinggal di ' +alamat)
+// }
+
+//     halo('Asep','Jakarta')
+//     halo('Dony','Bandung')
+//     halo('Nanda','Pati')
+
+// function dengan parameter (2)_alamat optional
+// function halo(nama_orang,alamat='Indonesia') {
+//     console.log('Halo, nama saya '+nama_orang +' , saya tinggal di ' +alamat)
+// }
+
+// halo('Dony', 'Bali')
+// halo('Dony', 'Bandung')
+// halo('Dony', 'Bekasi')
+
+// function dengan parameter (3)_alamat optional
+// function halo(nama_orang,alamat='',pekerjaan) { // params : variable khusus untuk memanggil function dinamis
+//     if (alamat) {
+//         console.log('Halo, nama saya '+nama_orang +', profesi saya '+pekerjaan +' saya tinggal di ' +alamat)
+//     } else{
+//         console.log('Halo, nama saya '+nama_orang +', profesi saya '+pekerjaan)
+//     } 
+// }
+
+// halo('Gagan')
+// halo('Elang','','Programmer')
+// halo('Diestra',null,'Programmer')
+// halo('Dony','Bekasi','Developer')
+
+
+// latihan function
+
+// function proses_perhitungan_gaji(staff,periode,hariKerja,gajiPerHari,jamLembur=0) {
+//     var gajian=gajiPerHari*hariKerja
+//     var upahLembur=(gajiPerHari/8)*jamLembur
+//     var bpjs=gajian*0.02
+//     var totalGajian=gajian-bpjs+upahLembur
+// }
+
+// function cetak_slip_gaji(staff,periode,gajian,upahLEmbur,totalGajian) {
+
+// document.write(
+//      `Slip Gaji Periode ${periode}
+//      <hr>
+//      Staff:${staff}<br>
+//      Gaji:Rp${gajian.toLocaleString('id-ID')}<br>
+//      Lembur:Rp${upahLEmbur.toLocaleString('id-ID')}<br>
+//      Total:Rp${totalGajian.toLocaleString('id-ID')}`
+//      )
+// }
+
+//     proses_perhitungan_gaji('Ami','Mei 2024',20,150000,5)
+//     proses_perhitungan_gaji('Doni','Mei 2024',22,150000)
+//     proses_perhitungan_gaji('Elang','Mei 2024',22,185000)
+
+// function proses_perhitungan_gaji(staff,periode,hariKerja,gajiPerHari,jamLembur=0) {
+//         var gajian=gajiPerHari*hariKerja
+//         var upahLembur=(gajiPerHari/8)*jamLembur
+//         var bpjs=gajian*0.025
+//         var totalGajian=gajian-bpjs+upahLembur
+//     }
+
+// function cetak_slip_gaji(staff,periode,gajian,upahLembur,totalGajian) {
+    
+//     // sysntax concat modern
+//     document.write(
+//         `Slip Gaji Periode ${periode}
+//         <hr>
+//         Staff:${staff}<br>
+//         Gaji:Rp${gajian.toLocaleString('id-ID')}<br>
+//         Lembur:Rp${upahLembur.toLocaleString('id-ID')}<br>
+//         Total:Rp${totalGajian.toLocaleString('id-ID')}<br><br><br>`
+//         )
+// }
+
+//     proses_perhitungan_gaji('Ami','Mei 2024',20,150000,5)
+//     proses_perhitungan_gaji('Doni','Mei 2024',22,150000)
+//     proses_perhitungan_gaji('Elang','Mei 2024',22,185000)
+
+
+// 06. Object
+// ======================================
+// var student={
+//     name:'Vincent',
+//     gpa:3.21,
+//     isGraduated:true
+// }
+
+// // akses
+// console.log(student.name);
+// console.log(student.gpa);
+// console.log(student['isGraduated'])
+
+
+// var buah=['durian',75000,true]
+
+var buah={
+    jenis:'durian',
+    harga:75000,
+    enak:true
+}
+
+// akses
+console.log(buah.jenis);
+console.log(buah.harga);
+console.log(buah.enak)
 
 </script>
+
