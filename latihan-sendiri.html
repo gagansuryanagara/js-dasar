@@ -281,6 +281,9 @@
 
 // 06. Object
 // ======================================
+
+// Object
+
 // var student={
 //     name:'Vincent',
 //     gpa:3.21,
@@ -295,16 +298,131 @@
 
 // var buah=['durian',75000,true]
 
-var buah={
-    jenis:'durian',
-    harga:75000,
-    enak:true
-}
+// var buah={
+//     jenis:'durian',
+//     harga:75000,
+//     enak:true,
+// }
 
-// akses
-console.log(buah.jenis);
-console.log(buah.harga);
-console.log(buah.enak)
+// // akses
+// console.log(buah.jenis);
+// console.log(buah.harga);
+// console.log(buah.enak);
+
+// Method
+
+// var mahasiswa={
+//     nama:'Aji Kowiyu',
+//     ipk:3.21,
+
+//     statusLulus:function(){
+//         if (this.ipk>=3) {
+//             return'Lulus'
+//         } else {
+//             return'Gagal'
+//         }
+
+//     },
+
+//     cetakRapor:function(){
+//         console.log(
+//         `
+//         Rapor ${this.nama};
+//         ==================
+//         Indeks Prestasi Kumulatif :${this.ipk};
+//         Status Kelulusan :${this.statusLulus()}
+//         `
+//         )
+//     }
+// }
+
+//     mahasiswa.statusLulus()
+//     mahasiswa.cetakRapor()
+
+
+// Latihan - 1
+
+// var caca={
+//     nama:'caca',
+//     berat:45,
+//     tinggi:155,
+//     hobi:['Nonton','Makan'],
+
+//     sebutkanHobby:function () {
+//         console.log('Hobby Caca : ');
+//         for (let i=0;i<this.hobi.length;i++) {
+//             console.log((i+1)+'. '+this.hobi[i])   
+//         }   
+//     }
+// }
+
+// caca.sebutkanHobby()
+
+// Latihan - 2
+
+    // var aji={
+    //     nama:'Aji',
+    //     berat:90,
+    //     tinggi:155,
+    //     hobi:['makan','nonton','shopping','rebahan'],
+
+    //     sebutkanHobi:function () {
+    //         var semuaHobi=''
+    //         for (let i=0;i<this.hobi.length;i++) {
+    //             semuaHobi=semuaHobi+(i+1)+'. '+this.hobi[i]               
+    //         }
+    //         console.log(
+    //             'Hobby $(this.nama): \n' +
+    //             semuaHobi
+    //         )
+    //     }
+    // }
+
+    // aji.sebutkanHobi()
+
+    // Penambahan ke diri sendiri (rekursif)
+
+    // var presiden='soekarno'
+    // presiden=presiden+'soeharto'
+    // presiden=presiden+'habibie'
+    // console.log(presiden)
+
+    // var peserta='Gagan'
+    // peserta +='Dony'
+    // peserta +='Elang'
+    // peserta +='Ami'
+    // console.log(peserta)
+
+
+    // Latihan - 3
+
+    var peserta=
+    [
+        {
+            nama:'dony',
+            alamat:'bekasi',
+            profesi:'wirausaha',
+        },
+
+        {
+            nama:'elang',
+            alamat:'jakarta',
+            profesi:'developer',
+        },
+
+        {
+            nama:'gagan',
+            alamat:'tangerang',
+            profesi:'pedagang',
+        },
+    
+    ]
+
+    for (let i=0;i<peserta.length;i++) {
+        console.log(peserta[i].nama +', ' +peserta[i].alamat +', ' +peserta[i].profesi)
+        
+    }
+
 
 </script>
 
