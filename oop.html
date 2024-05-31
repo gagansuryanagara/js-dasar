@@ -1,0 +1,52 @@
+<script>
+
+    // object
+    let kendaraan={
+        brand:'Honda civic',
+        tipe:'Sedan',
+        harga:900,
+
+        hidupkanMesin:function(){
+            console.log('mobil nyala, siap jalan')
+        },
+
+        matikanMesin:function(){
+            console.log('mobil mati...')
+        },
+    }
+
+    class Kendaraan {
+        constructor(brand,tipe,harga){
+            this.brand=brand
+            this.tipe=tipe
+            this.harga=harga
+        }
+        
+        hidupkanMesin() {
+            console.log('mobil nyala, siap jalan');
+        }
+
+        matikanMesin() {
+            console.log('mobil mati...');
+        }
+    }    
+
+    // object besar
+    console.log(kendaraan)
+    console.log(kendaraan.hidupkanMesin())
+    console.log(kendaraan.matikanMesin())
+    
+    // class = rancangan untuk membuat object besar
+    // daripada membuat project berulang labih dari 1 kali, lebih baik membuat class untuk menciptakan object
+    console.log(new Kendaraan('Toyota Alphard','minibus',2000)) // jadi sebiah object
+    //jadi sebuah object.instance
+
+    console.log(new Kendaraan('Toyota Avanza','minibus',590).hidupkanMesin()) // menjalankan fungsi dalam object
+    // console.log(Kendaraan.hidupkanMesin())
+    // console.log(kendaraan.hidupkanMesin()) 
+
+    let lamborgini=new Kendaraan('Lamborghini Gallardo','Supercar',100)
+    lamborgini.hidupkanMesin()
+
+
+</script>
